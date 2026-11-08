@@ -1,0 +1,19 @@
+{
+    "mode": "train",
+    "dataset_name": "METRLA",
+    "seed": 42,
+    "data_seed": 42,
+    "batch_size": 256,
+    "in_time_range": 12,
+    "pre_time_range": 1,
+    "irregular_time_steps": 9,
+    "model": "QWTA_GR",
+    "lr": 0.001,
+    "dropout": 0.25,
+    "weight_decay": 0.003,
+    "num_epochs": 1000,
+    "save_freq": 5,
+    "save_path": "./runs",
+    "checkpoint_path": null,
+    "patience": 150
+}
