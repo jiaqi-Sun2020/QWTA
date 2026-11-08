@@ -61,16 +61,6 @@ python -B main.py --smoke --model QWTA_GR --output-dir runs/smoke
 
 程序将 `best.pth`、`last.pth`、`config.json` 和 `result.json` 写入 `runs/smoke/QWTA_GR/` 下的运行目录。训练结束后，程序重新加载验证 MSE 最低的权重，再报告测试 MSE 和 MAE。
 
-### 评估权重
-
-在 PowerShell 中评估最近一次 QWTA-GR 冒烟训练保存的权重。
-
-```powershell
-$run = Get-ChildItem -LiteralPath .\runs\smoke\QWTA_GR -Directory |
-    Sort-Object LastWriteTime -Descending | Select-Object -First 1
-python -B test.py --checkpoint (Join-Path $run.FullName 'best.pth')
-```
-
 ### 配置完整训练
 
 完整训练时去掉 `--smoke`。通过 `--model` 选择表 I 的模型，可选 `QWTA_base`、`QWTA_GR`、`GAT`、`GCN`、`Transformer` 和 `GIN`。历史配置中的 `QWTA_AD` 是 `QWTA_GR` 的别名。
@@ -79,7 +69,8 @@ python -B test.py --checkpoint (Join-Path $run.FullName 'best.pth')
 
 ## 🎯 江南大学量子物理实验室
 
-**欢迎了解江南大学量子物理实验室！** 如对 QWTA 或相关研究有疑问，可通过下方主页联系。
+**欢迎了解江南大学量子物理实验室！** 如对 QWTA 或相关研究有疑问，可通过以下方式联系。
 
-- 📜 **项目作者** [Jiaqi Sun](https://github.com/jiaqi-Sun2020)
-- 🎓 **研究导师** [边志浩，江南大学理学院](https://science.jiangnan.edu.cn/info/1018/8646.htm)
+- 📜 **项目作者** [Jiaqi Sun](https://github.com/jiaqi-Sun2020) · [6241206031@stu.jiangnan.edu.cn](mailto:6241206031@stu.jiangnan.edu.cn)
+- 👥 **同门** [Tianhao Li](https://github.com/quarter-qwalk) · [6251208002@stu.jiangnan.edu.cn](mailto:6251208002@stu.jiangnan.edu.cn)
+- 🎓 **研究导师** [边志浩，江南大学理学院](https://science.jiangnan.edu.cn/info/1018/8646.htm) · [zhihaobian@jiangnan.edu.cn](mailto:zhihaobian@jiangnan.edu.cn)

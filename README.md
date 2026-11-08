@@ -61,16 +61,6 @@ python -B main.py --smoke --model QWTA_GR --output-dir runs/smoke
 
 The run writes `best.pth`, `last.pth`, `config.json`, and `result.json` under `runs/smoke/QWTA_GR/`. Training reloads the checkpoint with the lowest validation MSE before reporting test MSE and MAE.
 
-### Evaluate a Checkpoint
-
-Evaluate the latest QWTA-GR smoke run in PowerShell.
-
-```powershell
-$run = Get-ChildItem -LiteralPath .\runs\smoke\QWTA_GR -Directory |
-    Sort-Object LastWriteTime -Descending | Select-Object -First 1
-python -B test.py --checkpoint (Join-Path $run.FullName 'best.pth')
-```
-
 ### Configure a Full Run
 
 Omit `--smoke` for full training. Select a Table I model with `--model`. Available models are `QWTA_base`, `QWTA_GR`, `GAT`, `GCN`, `Transformer`, and `GIN`. Historical configurations can use `QWTA_AD` as an alias for `QWTA_GR`.
@@ -79,7 +69,8 @@ The default [configuration](config.json) uses MASK3, retaining 9 of 12 observati
 
 ## 🎯 JNU Quantum Physics Lab
 
-**Welcome to JNU Quantum Physics Lab!** For questions about QWTA and related research, use the profiles below.
+**Welcome to JNU Quantum Physics Lab!** For questions about QWTA and related research, use the contact details below.
 
-- 📜 **Project author** [Jiaqi Sun](https://github.com/jiaqi-Sun2020)
-- 🎓 **Research supervisor** [Zhihao Bian, School of Science, Jiangnan University](https://science.jiangnan.edu.cn/info/1018/8646.htm)
+- 📜 **Project author** [Jiaqi Sun](https://github.com/jiaqi-Sun2020) · [6241206031@stu.jiangnan.edu.cn](mailto:6241206031@stu.jiangnan.edu.cn)
+- 👥 **Lab colleague** [Tianhao Li](https://github.com/quarter-qwalk) · [6251208002@stu.jiangnan.edu.cn](mailto:6251208002@stu.jiangnan.edu.cn)
+- 🎓 **Research supervisor** [Zhihao Bian, School of Science, Jiangnan University](https://science.jiangnan.edu.cn/info/1018/8646.htm) · [zhihaobian@jiangnan.edu.cn](mailto:zhihaobian@jiangnan.edu.cn)
