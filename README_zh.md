@@ -47,25 +47,7 @@ python -m pip install -r requirements.txt
 
 ### 参考工作站
 
-#### 操作系统
-
-- **Windows 10 Pro for Workstations，64 位**（22H2，内部版本 19045.5247）
-
-#### 处理器
-
-- **Intel Core i9-14900K**，24 核 32 线程
-
-#### 显卡
-
-- **ASUS NVIDIA GeForce RTX 4090**，24 GB 显存
-
-#### 主板
-
-- **ASUS TUF GAMING Z790-PRO WIFI**
-
-#### 内存
-
-- **32 GB DDR5**（2 × 16 GB）
+Windows 10 Pro for Workstations（22H2）、Intel Core i9-14900K、NVIDIA RTX 4090（24 GB 显存）、32 GB DDR5 内存。
 
 ## 🚀 快速开始
 

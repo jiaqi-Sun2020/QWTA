@@ -47,25 +47,7 @@ Place `adj_mat.npy` and `node_values.npy` in `data/`. When that directory is abs
 
 ### Reference Workstation
 
-#### Operating System
-
-- **Windows 10 Pro for Workstations, 64-bit** (22H2, build 19045.5247)
-
-#### Processor
-
-- **Intel Core i9-14900K**, 24 cores and 32 threads
-
-#### Graphics Card
-
-- **ASUS NVIDIA GeForce RTX 4090**, 24 GB VRAM
-
-#### Motherboard
-
-- **ASUS TUF GAMING Z790-PRO WIFI**
-
-#### Memory
-
-- **32 GB DDR5** (2 × 16 GB)
+Windows 10 Pro for Workstations (22H2), Intel Core i9-14900K, NVIDIA RTX 4090 (24 GB VRAM), and 32 GB DDR5 RAM.
 
 ## 🚀 Quick Start
 
